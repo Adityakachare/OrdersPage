@@ -6,7 +6,7 @@ const useOrdersLogic = () => {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
   const [selectedTickers, setSelectedTickers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [recordsPerPage] = useState(10); // You can make this dynamic if needed
+  const [recordsPerPage] = useState(10); 
 
   const sortableOrders = useMemo(() => {
     let sortable = [...ordersData];
@@ -56,7 +56,7 @@ const useOrdersLogic = () => {
       direction = "desc";
     }
     setSortConfig({ key, direction });
-    setCurrentPage(1); // Reset to first page on sort change
+    setCurrentPage(1); 
   };
 
   const getSortIcon = (columnKey) => {
@@ -72,7 +72,7 @@ const useOrdersLogic = () => {
       }
     }
 
-    return rotationClass; // Return class for Lucide icon
+    return rotationClass; 
   };
 
   const handleTickerClick = (ticker) => {

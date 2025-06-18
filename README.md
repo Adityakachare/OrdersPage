@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📦 021 Trade – Open Orders Page (Frontend Assignment)
 
-## Getting Started
+This project is a mobile-responsive recreation of the **'Open Orders'** page from the 021 Trade web application. It is built using **Next.js (App Router)** and **Tailwind CSS**, focusing on high-quality **UI/UX design**, interactivity, and **mobile-first responsiveness**.
 
-First, run the development server:
+
+
+## Assignment Brief
+
+You were required to replicate a provided screenshot of the Orders page:
+
+- ✅ In **Next.js** – for the **full-time Frontend Developer** role
+- ✅ Focus on **UI/UX quality**, **responsiveness**, and clean code
+
+
+
+
+
+## Approach
+
+-   **Component-based** structure with isolated, reusable logic, ensuring modularity and maintainability.
+-   **Tailwind CSS** for pixel-perfect responsiveness and efficient layout control, accelerating UI development.
+-   **Custom hook (`useOrdersLogic.js`)** to manage sorting, filtering, and pagination logic cleanly, promoting reusability and separation of concerns.
+-   Emphasis on **mobile layout** without compromising the desktop experience, providing a seamless user experience across devices.
+
+
+
+## 🗂️ Folder Structure
+
+- **`app/OpenOrdersPage.jsx`**  
+  Main page component that combines all subcomponents, sets up layout, and uses the custom hook for logic.
+
+- **`components/Navbar.jsx`**  
+  Contains the top navigation bar of the application.
+
+- **`components/OpenOrders/DownloadButton.jsx`**  
+  A reusable button component used to trigger a download (UI only).
+
+- **`components/OpenOrders/OpenOrdersTable.jsx`**  
+  Renders the orders table with sortable headers and dynamic data rows.
+
+- **`components/OpenOrders/OpenOrdersTableFilters.jsx`**  
+  Handles the filter section UI including client dropdown, search input, and selected ticker tags.
+
+- **`components/OpenOrders/PaginationControls.jsx`**  
+  Displays pagination controls like Previous/Next buttons and current page indicator.
+
+- **`data/ordersData.js`**  
+  Contains static dummy order data used to populate the table.
+
+- **`hooks/useOrdersLogic.js`**  
+  Custom React hook managing core logic for sorting, pagination, and selected tickers.
+
+
+## ⚙️ How to Run Locally
 
 ```bash
+# 1. Clone the repo
+# 2. Navigate to the project directory
+# 3. Install dependencies
+npm install
+# 4. Start the Next.js dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 5. Open in browser
+http://localhost:3000
