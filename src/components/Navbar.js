@@ -35,9 +35,9 @@ const Navbar = () => {
             <Image
               src={Logo}
               alt="Company Logo"
-              width={50} // Specify the intrinsic width of your logo in pixels
-              height={50} // Specify the intrinsic height of your logo in pixels
-              className="h-8 w-auto" // Tailwind classes for display size
+              width={50} 
+              height={50} 
+              className="h-8 w-auto" 
             />
           </div>
 
